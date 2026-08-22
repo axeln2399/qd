@@ -23,4 +23,4 @@ The plan lives on the site, not in this README — it has a week-by-week tracker
 
 ## Files
 
-`index.html` and `diagnostic.html` are the site. `style.css` is shared. `sw.js` and `manifest.webmanifest` make it installable and work offline. `.nojekyll` keeps GitHub Pages from processing any of it.
+`index.html` and `diagnostic.html` are the site. `style.css` is shared. `sw.js` and `manifest.webmanifest` make it installable and work offline. `.nojekyll` keeps GitHub Pages from processing any of it. `tools-mkicon.py` regenerates the icon PNGs from the same geometry as the inline SVG mark.

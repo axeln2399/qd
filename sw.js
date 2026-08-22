@@ -1,6 +1,6 @@
 // Cache-first service worker. The plan is static, so bumping CACHE on
 // deploy is the only invalidation needed.
-var CACHE = "qd-v1";
+var CACHE = "qd-v2";
 var ASSETS = [
   ".",
   "index.html",

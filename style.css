@@ -77,6 +77,12 @@ body {
 
 .masthead { padding-top: 72px; display: flex; flex-direction: column; gap: 20px; }
 
+.mast-mark { display: flex; align-items: center; gap: 22px; flex-wrap: wrap; }
+
+.mark { width: 76px; height: 76px; display: block; flex: none; }
+
+.mark-sm { width: 40px; height: 40px; display: block; }
+
 .ladder {
   display: flex;
   flex-direction: column;
