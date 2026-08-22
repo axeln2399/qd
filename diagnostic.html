@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Week 0 Diagnostic</title>
+<meta name="description" content="A closed-book maths diagnostic that sets the length of the study plan's mathematics block.">
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" href="icon-192.png">
+<meta name="theme-color" content="#F5F3EE" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131517" media="(prefers-color-scheme: dark)">
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <a class="backlink" href="index.html">&larr; Back to the plan</a>
+    <h1>Week&nbsp;0 Diagnostic</h1>
+    <p class="standfirst">Twenty points across calculus, linear algebra, probability, differential equations and numerics. It exists for one reason: to set the length of the mathematics block before the plan commits to a length it cannot keep.</p>
+
+    <div class="meta-strip">
+      <div class="meta-item"><span class="meta-label">Time</span><span class="meta-value">90 min</span></div>
+      <div class="meta-item"><span class="meta-label">Conditions</span><span class="meta-value">Closed book</span></div>
+      <div class="meta-item"><span class="meta-label">Total</span><span class="meta-value">20 pts</span></div>
+      <div class="meta-item"><span class="meta-label">Probability</span><span class="meta-value">8 pts</span></div>
+    </div>
+  </header>
+
+  <section>
+    <div class="sec-head"><h2>Rules</h2><span class="sec-tag">Protocol</span></div>
+    <div class="reality">
+      <p><strong>Ninety minutes, closed book.</strong> No notes, no internet, no calculator beyond arithmetic. Write the working, not just the answer &mdash; partial credit is real. Where you are stuck, write down what you would look up; that is diagnostic information too.</p>
+      <p><strong>Pass 1</strong> is closed-book and timed. It measures <em>retention</em>. <strong>Pass 2</strong> comes afterwards, with notes, redoing everything missed. It measures <em>re-learning speed</em>. The gap between the two scores is the real signal.</p>
+      <p><strong>Do not cheat.</strong> The only person you can mislead here is your own schedule. A score inflated by twenty percent buys a three-month planning error that surfaces around week 30, which is the worst possible time to discover it.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><h2>Section A &mdash; Calculus</h2><span class="sec-tag">4 points</span></div>
+    <div class="rules">
+      <div class="q"><span class="q-id">A1</span><span class="q-body">Evaluate <code>&int;&#8320;<sup>&infin;</sup> x&middot;e<sup>&minus;x</sup> dx</code>.</span></div>
+      <div class="q"><span class="q-id">A2</span><span class="q-body">Differentiate <code>ln(cos x)</code>. Then expand <code>e<sup>x</sup>&middot;cos x</code> as a Taylor series up to and including the <code>x&sup3;</code> term.</span></div>
+      <div class="q"><span class="q-id">A3</span><span class="q-body">State the value of <code>&int;&#8331;<sub>&infin;</sub><sup>&infin;</sup> e<sup>&minus;ax&sup2;</sup> dx</code> for <code>a &gt; 0</code>, and sketch how it is derived.</span></div>
+      <div class="q"><span class="q-id">A4</span><span class="q-body">For <code>f(x,y) = x&sup2;y + y&sup3;</code>: find the gradient, then the directional derivative at <code>(1,2)</code> in the direction of <code>(3,4)</code>.</span></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><h2>Section B &mdash; Linear algebra</h2><span class="sec-tag">3 points</span></div>
+    <div class="rules">
+      <div class="q"><span class="q-id">B1</span><span class="q-body">Find the eigenvalues and eigenvectors of <code>[[2,1],[1,2]]</code>.</span></div>
+      <div class="q"><span class="q-id">B2</span><span class="q-body">Define a positive semi-definite matrix. Give one practical test for it. Explain why a covariance matrix is always PSD.</span></div>
+      <div class="q"><span class="q-id">B3</span><span class="q-body">What does the singular value decomposition give you, geometrically? Name one use for it in finance.</span></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><h2>Section C &mdash; Probability</h2><span class="sec-tag">8 points &middot; weighted</span></div>
+    <p class="t-note">Weighted heaviest on purpose. This is the working mathematics of market microstructure, and it is the section physics graduates are typically weakest at &mdash; statistical mechanics is not probability theory.</p>
+    <div class="rules">
+      <div class="q"><span class="q-id">C1</span><span class="q-body">Two fair dice are rolled. Given that the sum is 8, what is the probability that at least one die shows a 3?</span></div>
+      <div class="q"><span class="q-id">C2</span><span class="q-body"><code>X ~ Exponential(&lambda;)</code>. Compute <code>E[X]</code> and <code>Var[X]</code> from the definition. Then show <code>P(X &gt; s+t | X &gt; s) = P(X &gt; t)</code>, name the property, and say in one sentence why it matters.</span></div>
+      <div class="q"><span class="q-id">C3</span><span class="q-body"><code>X, Y</code> are iid <code>Uniform(0,1)</code>. Compute <code>E[max(X,Y)]</code> and <code>P(X + Y &lt; 1)</code>.</span></div>
+      <div class="q"><span class="q-id">C4</span><span class="q-body">Define conditional expectation <code>E[X | Y]</code>. State the tower property. Then use it: a coin with unknown bias <code>p ~ Uniform(0,1)</code> is flipped once &mdash; what is the probability of heads?</span></div>
+      <div class="q"><span class="q-id">C5</span><span class="q-body"><code>S&#8345;</code> is a simple symmetric random walk. Give <code>E[S&#8345;]</code> and <code>Var[S&#8345;]</code>, and compute <code>P(S&#8321;&#8320; = 0)</code>. Define a martingale and say whether <code>S&#8345;</code> is one.</span></div>
+      <div class="q"><span class="q-id">C6</span><span class="q-body">State the Central Limit Theorem precisely. Then approximate <code>P(sum &gt; 20)</code> for 100 iid variables with mean 0 and variance 1.</span></div>
+      <div class="q"><span class="q-id">C7</span><span class="q-body">A stock's mid-price is 100.00 with a spread of 0.02. You buy at the ask and immediately sell at the bid &mdash; what is the loss? Now suppose you can instead post at the bid and get filled half the time, crossing the spread the other half: what is the expected cost per round trip? <em>Deliberately not a textbook question &mdash; it is the kind of reasoning the job is made of, and scoring zero here is expected.</em></span></div>
+      <div class="q"><span class="q-id">C8</span><span class="q-body">What is the difference between correlation and independence? Give a concrete example of two variables that are uncorrelated but not independent.</span></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><h2>Section D &mdash; Differential equations</h2><span class="sec-tag">2 points</span></div>
+    <div class="rules">
+      <div class="q"><span class="q-id">D1</span><span class="q-body">Solve <code>dy/dx = &minus;ky</code> with <code>y(0) = y&#8320;</code>. Then solve <code>y'' + 3y' + 2y = 0</code>.</span></div>
+      <div class="q"><span class="q-id">D2</span><span class="q-body">Write down the one-dimensional heat equation. In one sentence, say what it describes physically &mdash; and, if you know, what it has to do with option pricing.</span></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><h2>Section E &mdash; Numerical &amp; computational</h2><span class="sec-tag">3 points</span></div>
+    <div class="rules">
+      <div class="q"><span class="q-id">E1</span><span class="q-body">Describe how to estimate &pi; by Monte Carlo. How does the error scale with the number of samples <code>N</code>, and what is the practical consequence of that scaling?</span></div>
+      <div class="q"><span class="q-id">E2</span><span class="q-body">Why does <code>0.1 + 0.2 != 0.3</code> in floating point? What is catastrophic cancellation, and give an example where it would destroy a financial calculation.</span></div>
+      <div class="q"><span class="q-id">E3</span><span class="q-body">Compute a running mean and variance over a stream of prices in one pass, without storing the data. Describe an approach. What goes wrong with the naive <code>E[X&sup2;] &minus; E[X]&sup2;</code> formula?</span></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><h2>Scoring</h2><span class="sec-tag">Calibration</span></div>
+    <p>Score each part generously for correct method and harshly for hand-waving. Record three numbers in the log: pass 1 total, pass 1 Section C, and pass 2 total.</p>
+
+    <div class="scroller">
+      <table>
+        <thead><tr><th>Pass 1 overall</th><th>Section C</th><th>Maths block</th></tr></thead>
+        <tbody>
+          <tr><td class="t-time">&ge; 85% (17+)</td><td class="t-time">&ge; 80% (7+)</td><td class="t-note"><strong>4 weeks</strong> &mdash; refresh only. Straight into statistics and microstructure.</td></tr>
+          <tr><td class="t-time">60&ndash;85% (12&ndash;16)</td><td class="t-time">60&ndash;80% (5&ndash;6)</td><td class="t-note"><strong>8 weeks</strong> &mdash; the assumed default. Probability first.</td></tr>
+          <tr><td class="t-time">40&ndash;60% (8&ndash;11)</td><td class="t-time">40&ndash;60% (3&ndash;4)</td><td class="t-note"><strong>12 weeks</strong> &mdash; real relearning. Blitzstein front to back.</td></tr>
+          <tr><td class="t-time">&lt; 40% (&lt;8)</td><td class="t-time">&lt; 40% (&lt;3)</td><td class="t-note"><strong>16 weeks</strong>, and revisit the plan length honestly at week 16.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="t-note">Use whichever row is <strong>worse</strong>. Probability dominates because probability is the job.</p>
+
+    <div class="stack">
+      <h3>Reading the gap between passes</h3>
+      <ul>
+        <li><strong>Gap under 15%</strong> &mdash; it genuinely is not there. Take the longer block. No shame in it: the degree bought re-learning speed, not retained knowledge.</li>
+        <li><strong>Gap over 30%</strong> &mdash; it is all still there, just cold. Take the shorter block and lean on problem sets rather than lectures.</li>
+      </ul>
+      <h3>If Section C is much weaker than the rest</h3>
+      <p class="t-note">Expected, and fine. Spend the whole block on Blitzstein &amp; Hwang and ignore everything else. Rusty calculus costs almost nothing in this field. Weak probability costs everything.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p><a href="index.html">&larr; Back to the plan</a> &middot; <a href="https://github.com/axeln2399/qd">Repository</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

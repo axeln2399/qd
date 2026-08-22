@@ -1,8 +1,0 @@
-title: qd
-description: Physics grad + 5 years JVM → hireable Quant Developer in 24 months
-theme: jekyll-theme-cayman
-plugins:
-  - jekyll-relative-links
-relative_links:
-  enabled: true
-  collections: true

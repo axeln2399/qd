@@ -1,0 +1,761 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Quant Developer in 104 Weeks</title>
+<meta name="description" content="A 24-month quant developer study plan for a physics graduate with five years of software experience, with a week-by-week progress tracker.">
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" href="icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="qd">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#F5F3EE" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131517" media="(prefers-color-scheme: dark)">
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <div class="ladder" aria-hidden="true">
+      <div class="lad-row ask"><span class="px">4 070</span><span class="qty">18 400</span><span class="lad-bar" style="width:62%"></span></div>
+      <div class="lad-row ask"><span class="px">4 065</span><span class="qty">9 100</span><span class="lad-bar" style="width:34%"></span></div>
+      <div class="lad-row ask"><span class="px">4 060</span><span class="qty">3 200</span><span class="lad-bar" style="width:14%"></span></div>
+      <div class="lad-spread">spread 10 &middot; mid 4 055</div>
+      <div class="lad-row bid"><span class="px">4 050</span><span class="qty">5 700</span><span class="lad-bar" style="width:22%"></span></div>
+      <div class="lad-row bid"><span class="px">4 045</span><span class="qty">12 800</span><span class="lad-bar" style="width:46%"></span></div>
+      <div class="lad-row bid"><span class="px">4 040</span><span class="qty">21 500</span><span class="lad-bar" style="width:74%"></span></div>
+    </div>
+
+    <h1>Quant Developer in 104&nbsp;Weeks</h1>
+    <p class="standfirst">A schedule built for one hour on weekday evenings and two to three at the weekend &mdash; designed for the tired hour after a nine-to-five, not the imaginary one. Week 1 starts whenever you start. Tick weeks off as you finish them; progress saves on this device.</p>
+
+    <div class="meta-strip">
+      <div class="meta-item"><span class="meta-label">Weekly budget</span><span class="meta-value">10 hrs</span></div>
+      <div class="meta-item"><span class="meta-label">Duration</span><span class="meta-value">104 weeks</span></div>
+      <div class="meta-item"><span class="meta-label">Total study</span><span class="meta-value">~1,040 hrs</span></div>
+      <div class="meta-item"><span class="meta-label">Target</span><span class="meta-value">Quant dev</span></div>
+    </div>
+  </header>
+
+  <section>
+    <div class="sec-head">
+      <h2>What was decided, and what it cost</h2>
+      <span class="sec-tag">01 &middot; Scope</span>
+    </div>
+    <p>Every line below was a fork with a cheaper alternative. They are written down so that in month nine, when this feels wrong, you can argue with the reasoning instead of with yourself.</p>
+
+    <div class="scroller">
+      <table>
+        <thead><tr><th style="width:34%">Decision</th><th>Choice, and the road not taken</th></tr></thead>
+        <tbody>
+          <tr><td class="t-block">Role</td><td class="t-note"><strong>Quant developer.</strong> Not researcher, not trader. Researcher means competing on statistics against PhDs, which is your weakest axis; developer means competing on engineering, which is the asset you already own.</td></tr>
+          <tr><td class="t-block">Specialisation</td><td class="t-note"><strong>Market microstructure and execution.</strong> Systematic infrastructure secondary. Derivatives pricing is literacy only &mdash; enough to talk, never enough to price exotics.</td></tr>
+          <tr><td class="t-block">Language</td><td class="t-note"><strong>Full C++ pivot.</strong> The expensive branch: roughly 150&ndash;200 hours, and it means competing partly as a junior. The JVM-first alternative would reach interviews a year sooner but not reach prop shops. Week 34 is the off-ramp.</td></tr>
+          <tr><td class="t-block">Market</td><td class="t-note"><strong>Equities and traditional finance.</strong> Jakarta first, Singapore and remote in scope, relocation acceptable.</td></tr>
+          <tr><td class="t-block">Crypto</td><td class="t-note"><strong>Out as a career target, in as a data source.</strong> It is the only free full-depth real-time order book data on earth. Nobody in an interview cares which venue's bytes your engine parsed.</td></tr>
+          <tr><td class="t-block">Credentials</td><td class="t-note"><strong>None.</strong> No CQF, no bootcamp. A master's is deferred until after landing in the industry, ideally funded by someone else.</td></tr>
+          <tr><td class="t-block">Stepping stone</td><td class="t-note"><strong>Accepted, at any pay, from week 36.</strong> Being inside the industry beats being outside it with better notes.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Why the number is five, not ten</h2>
+      <span class="sec-tag">02 &middot; Reality</span>
+    </div>
+    <p>Here is the arithmetic that shapes everything else, so you can check it rather than trust it.</p>
+
+    <div class="reality">
+      <div class="sum">
+        <span class="op"></span><span class="lbl">Weekdays &mdash; 5 &times; 1 hr</span><span class="val">5 hrs / wk</span>
+        <span class="op">+</span><span class="lbl">Weekend &mdash; 2 &times; 2.5 hr</span><span class="val">5 hrs / wk</span>
+        <span class="op"></span><span class="lbl total-l">Available</span><span class="val total">10 hrs / wk</span>
+      </div>
+      <p>But the hours are not fungible. Studying after a full working day means the weekday hour carries <strong>low to medium cognitive load</strong> &mdash; drilling, reading, review. New mathematics does not happen at 9pm. It never has, for anyone.</p>
+      <p><strong>So your real capacity for new concepts is about 5 hours a week, not 10.</strong> Over 104 weeks that is roughly 520 hours of genuine learning plus 520 hours of practice and repetition. It is enough for one specialisation done properly. It is not enough for two, which is why the scope above is so narrow.</p>
+      <p>The one lucky break: <strong>C++ drilling genuinely works at 8pm.</strong> It is muscle memory rather than insight. That is a real argument for the C++ pivot that has nothing to do with job listings.</p>
+    </div>
+
+    <div class="stack">
+      <h3>Two ways this length changes</h3>
+      <ul>
+        <li><strong>The diagnostic comes back strong.</strong> If probability is still largely intact, the maths block drops from 8 weeks to 4 and everything downstream pulls forward by a month. Sit the test before believing any date on this page.</li>
+        <li><strong>Your floor is below 10 hours.</strong> If a normal bad week is 6 hours, this is a 170-week plan and pretending otherwise just moves the disappointment later. Log real hours for four weeks before trusting the length.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>The weekly engine</h2>
+      <span class="sec-tag">03 &middot; Rhythm</span>
+    </div>
+    <p>The phases change what you study. This does not change. It has to survive tired evenings, so it is built to be boring and automatic.</p>
+
+    <div class="stack">
+      <h3>Weekday &mdash; 60 minutes, same slot every evening</h3>
+      <div class="scroller">
+        <table>
+          <thead><tr><th style="width:78px">Minutes</th><th style="width:32%">Block</th><th>What you actually do</th></tr></thead>
+          <tbody>
+            <tr><td class="t-time">0&ndash;10</td><td class="t-block">Review<span class="lock">Never skip</span></td><td class="t-note">Spaced repetition on C++ semantics and probability facts. Ten minutes, cards only. This is the compounding part.</td></tr>
+            <tr><td class="t-time">10&ndash;50</td><td class="t-block">C++ / project code</td><td class="t-note">Until week 30, a learncpp section plus its exercises. From week 31, the flagship project. Code every weekday, however little.</td></tr>
+            <tr><td class="t-time">50&ndash;60</td><td class="t-block">Reading</td><td class="t-note">Harris, a paper, an exchange spec, a talk. The only block you may move to a commute.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="t-note">One weekday a week from week 14, the reading block becomes a <strong>15-minute recorded explanation in English</strong> of a technical decision you made. Unscripted, then listened back. Roughly ten weeks of discomfort, then it stops being hard.</p>
+    </div>
+
+    <div class="stack">
+      <h3>Saturday &mdash; 150 minutes, the only hard block</h3>
+      <div class="scroller">
+        <table>
+          <thead><tr><th style="width:78px">Minutes</th><th style="width:32%">Block</th><th>What you actually do</th></tr></thead>
+          <tbody>
+            <tr><td class="t-time">0&ndash;15</td><td class="t-block">Cold recall</td><td class="t-note">Redo last week's hardest problem without notes. If you cannot, that topic repeats this week.</td></tr>
+            <tr><td class="t-time">15&ndash;90</td><td class="t-block">New mathematics</td><td class="t-note">Problems, not videos. Watching a lecture and understanding it is not the same as being able to do it, and only one of those is tested.</td></tr>
+            <tr><td class="t-time">90&ndash;150</td><td class="t-block">Hard project work</td><td class="t-note">Design, the difficult implementation, benchmarking. The part that needs a whole brain.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="stack">
+      <h3>Sunday &mdash; 150 minutes, ending in a commit</h3>
+      <div class="scroller">
+        <table>
+          <thead><tr><th style="width:78px">Minutes</th><th style="width:32%">Block</th><th>What you actually do</th></tr></thead>
+          <tbody>
+            <tr><td class="t-time">0&ndash;90</td><td class="t-block">Project work</td><td class="t-note">Implementation, tests, cleanup. Ship something small every Sunday.</td></tr>
+            <tr><td class="t-time">90&ndash;130</td><td class="t-block">Microstructure reading</td><td class="t-note">Harris, the LOB survey, exchange rulebooks, execution papers.</td></tr>
+            <tr><td class="t-time">130&ndash;150</td><td class="t-block">Log and commit<span class="lock">Never skip</span></td><td class="t-note">Hours, what happened, what is stuck. Commit it publicly even when the honest entry is &ldquo;did nothing.&rdquo; A missing entry is the only real failure mode.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Seven phases</h2>
+      <span class="sec-tag">04 &middot; Arc</span>
+    </div>
+    <p>Week numbers are relative throughout. Week 1 is whenever you start &mdash; there are no calendar dates anywhere on this page, deliberately, because a plan with dates on it starts failing the first week you miss.</p>
+
+    <div class="phases">
+
+      <article class="phase">
+        <div class="phase-mark"><div class="phase-cell">&radic;</div><div class="phase-wk">WK 1&ndash;2</div></div>
+        <div class="phase-body">
+          <div class="phase-title"><h3>Calibration</h3><span class="phase-dates">2 weeks &middot; 20 hrs</span></div>
+          <p>Find out where you actually stand, and remove every source of friction before motivation is spent. The physics degree bought you re-learning <em>speed</em>, not retained knowledge. Those are different things, and only one of them is on the diagnostic.</p>
+          <div class="targets"><span class="chip">Diagnostic <b>2 passes</b></span><span class="chip">Toolchain <b>working</b></span><span class="chip">Log <b>started</b></span></div>
+          <p class="t-note"><strong>Materials:</strong> the <a href="diagnostic.html">Week&nbsp;0 diagnostic</a>, a C++ toolchain (clang or gcc, CMake, GoogleTest, ASan/UBSan), Compiler Explorer, and Harris chapters 1&ndash;3 as background reading.</p>
+          <div class="gate"><b>Gate 0 &middot; end of week 2</b>Two diagnostic scores in the log, honestly obtained. A hello-world that builds under CMake, has a passing test, and runs clean under AddressSanitizer.</div>
+        </div>
+      </article>
+
+      <article class="phase">
+        <div class="phase-mark"><div class="phase-cell">&Sigma;</div><div class="phase-wk">WK 3&ndash;14</div></div>
+        <div class="phase-body">
+          <div class="phase-title"><h3>Foundations</h3><span class="phase-dates">12 weeks &middot; 120 hrs</span></div>
+          <p>Two tracks in parallel: probability at the weekend, C++ from zero on weekday evenings. This is the phase people quit in, so it is deliberately unglamorous and deliberately measurable. Probability comes first because it is the working mathematics of this field, and because it is the piece physics graduates are reliably weakest at &mdash; statistical mechanics is not probability theory.</p>
+          <div class="targets"><span class="chip">Blitzstein <b>ch.1&ndash;9</b></span><span class="chip">learncpp <b>complete</b></span><span class="chip">Diagnostic <b>&ge;85%</b></span></div>
+          <p class="t-note"><strong>Materials:</strong> Blitzstein &amp; Hwang plus the Stat 110 lectures, Wasserman for the statistics weeks, 3Blue1Brown for the linear algebra refresh, learncpp.com front to back.</p>
+          <div class="gate"><b>Gate 1 &middot; end of week 14</b>Retake the diagnostic and score 85 percent or better closed-book. Ship one small C++ program that is RAII-correct, tested, sanitiser-clean, and that you are not embarrassed by when you reread it a week later.</div>
+        </div>
+      </article>
+
+      <article class="phase">
+        <div class="phase-mark"><div class="phase-cell">&lambda;</div><div class="phase-wk">WK 15&ndash;30</div></div>
+        <div class="phase-body">
+          <div class="phase-title"><h3>Depth &amp; mechanics</h3><span class="phase-dates">16 weeks &middot; 160 hrs</span></div>
+          <p>Modern C++ and concurrency on weekdays; how markets actually work at the weekend. Read real specifications, not summaries of them &mdash; the ITCH and FIX documents are public, and reading one end to end puts you ahead of most candidates. The IDX rulebook is a genuine local edge that no imported curriculum will give you.</p>
+          <div class="targets"><span class="chip">Harris <b>complete</b></span><span class="chip">C++ <b>Meyers + Williams</b></span><span class="chip">Specs <b>ITCH, FIX, IDX</b></span></div>
+          <p class="t-note"><strong>Materials:</strong> Harris <em>Trading and Exchanges</em>, Gould et al. LOB survey, NASDAQ ITCH and FIX specifications, IDX rulebook, Meyers <em>Effective Modern C++</em>, Williams <em>C++ Concurrency in Action</em>.</p>
+          <div class="gate"><b>Gate 2 &middot; end of week 26 &mdash; criterion &gamma;</b>Publish a 2,000-word explainer of what happens to a retail equity order from click to settlement. If you cannot write it without constantly looking things up, you do not understand markets yet and the flagship waits.</div>
+          <div class="deadline"><b>Week 30 &middot; design review</b>A written design document for the matching engine, reread cold a week later. Building before designing is how a portfolio project becomes an abandoned repository.</div>
+        </div>
+      </article>
+
+      <article class="phase">
+        <div class="phase-mark"><div class="phase-cell">&equiv;</div><div class="phase-wk">WK 31&ndash;52</div></div>
+        <div class="phase-body">
+          <div class="phase-title"><h3>Flagship &middot; limit order book</h3><span class="phase-dates">22 weeks &middot; 220 hrs</span></div>
+          <p>The project that makes a recruiter open your GitHub. Exercises stop; engineering starts. Built in four tagged versions, in this order, because the order is the entire point: <strong>correct, then trustworthy, then measured, then fast.</strong> Anyone can write a fast order book that is quietly wrong.</p>
+          <div class="targets"><span class="chip">v0 <b>correct</b></span><span class="chip">v1 <b>tested</b></span><span class="chip">v2 <b>measured</b></span><span class="chip">v3 <b>optimised</b></span></div>
+          <p class="t-note"><strong>Materials:</strong> LOBSTER sample data for ground-truth validation, Google Benchmark, perf or Instruments, Agner Fog's optimisation manuals, Carl Cook's <em>When a Microsecond Is an Eternity</em>.</p>
+          <div class="deadline"><b>Week 34 &middot; the C++ off-ramp</b>Honest question, asked once: is C++ still mud? If yes, switch to JVM-first and target banks, exchanges and platform teams, adding C++ later on someone else's payroll. This is a planned branch, not a failure.</div>
+          <div class="deadline"><b>Week 36 &middot; applications open</b>Start applying for stepping-stone roles: fintech backend, bank risk engineering, broker platform, exchange technology, data engineering at an asset manager. Low effort, ongoing, any pay.</div>
+          <div class="gate"><b>Gate 3 &middot; end of week 52 &mdash; one year in</b>The engine replays a full trading day, passes property tests, and has published latency percentiles with a before-and-after optimisation write-up. Percentiles, never averages.</div>
+        </div>
+      </article>
+
+      <article class="phase">
+        <div class="phase-mark"><div class="phase-cell">&asymp;</div><div class="phase-wk">WK 53&ndash;68</div></div>
+        <div class="phase-body">
+          <div class="phase-title"><h3>Live data</h3><span class="phase-dates">16 weeks &middot; 160 hrs</span></div>
+          <p>Real data, real production pressure, no money spent and no permission needed. A feed handler is where you meet the problems that only exist in production: sequence gaps, out-of-order messages, reconnection, clock skew, backpressure. These are exactly the problems the job is made of.</p>
+          <div class="targets"><span class="chip">Feed <b>live L2</b></span><span class="chip">Throughput <b>100k msg/s</b></span><span class="chip">Uptime <b>1 week</b></span></div>
+          <p class="t-note"><strong>Materials:</strong> a crypto venue's public WebSocket L2 feed (free, full depth, no application), your own Phase 3 engine as the consumer.</p>
+          <div class="gate"><b>Gate 4 &middot; end of week 68 &mdash; criterion &beta;</b>The flagship is shipped, documented, benchmarked and written up publicly. A README a stranger reads in five minutes and understands why the work is good. Applications now carry a link instead of a hope.</div>
+        </div>
+      </article>
+
+      <article class="phase">
+        <div class="phase-mark"><div class="phase-cell">&part;</div><div class="phase-wk">WK 69&ndash;88</div></div>
+        <div class="phase-body">
+          <div class="phase-title"><h3>Simulator &amp; execution</h3><span class="phase-dates">20 weeks &middot; 200 hrs</span></div>
+          <p>The capstone, and the strongest interview story in the plan. Extend the engine into an exchange simulator with latency, queue position and fee tiers, then implement execution algorithms and measure them properly. Derivatives literacy runs alongside at the weekend &mdash; enough Hull to discuss options and greeks credibly, and deliberately no further.</p>
+          <div class="targets"><span class="chip">Algos <b>TWAP, VWAP, POV</b></span><span class="chip">Almgren&ndash;Chriss <b>implemented</b></span><span class="chip">Hull <b>ch.1&ndash;15</b></span></div>
+          <p class="t-note"><strong>Materials:</strong> Almgren &amp; Chriss on optimal execution, Cartea/Jaimungal/Penalva selectively, Hasbrouck, Hull chapters 1&ndash;15, L&oacute;pez de Prado on backtest overfitting.</p>
+          <div class="gate"><b>Gate 5 &middot; end of week 88</b>Publish: &ldquo;I built an exchange simulator with realistic queue dynamics and measured four execution algorithms against it.&rdquo; That one sentence opens doors at prop shops and buy-side execution desks alike.</div>
+        </div>
+      </article>
+
+      <article class="phase">
+        <div class="phase-mark"><div class="phase-cell">&alpha;</div><div class="phase-wk">WK 89&ndash;104</div></div>
+        <div class="phase-body">
+          <div class="phase-title"><h3>Conversion</h3><span class="phase-dates">16 weeks &middot; 160 hrs</span></div>
+          <p>Studying stops being the point. Getting hired becomes the point. Everything here is a performance skill rather than a knowledge one, which means it is trained by rehearsal under time pressure and by nothing else.</p>
+          <div class="targets"><span class="chip">Mocks <b>3 recorded</b></span><span class="chip">Puzzles <b>Crack + Zhou</b></span><span class="chip">Applications <b>volume</b></span></div>
+          <p class="t-note"><strong>Materials:</strong> Crack <em>Heard on the Street</em>, Zhou's green book, Joshi's C++-flavoured questions, Kleppmann for systems rounds, LeetCode medium in C++ and timed.</p>
+          <div class="gate"><b>Gate 6 &middot; end of week 104 &mdash; criterion &alpha;</b>Passing technical screens. Not necessarily an offer &mdash; offers turn on luck and timing &mdash; but the screen is a skill test, and passing it is the part actually under your control.</div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>The toolkit</h2>
+      <span class="sec-tag">05 &middot; Materials</span>
+    </div>
+    <p>One primary source per topic at a time. Collecting resources is procrastination that feels like progress.</p>
+
+    <div class="kit">
+
+      <div class="kit-item">
+        <span class="kit-name"><a href="https://projects.iq.harvard.edu/stat110/home" target="_blank" rel="noopener noreferrer">Blitzstein &amp; Hwang &mdash; Introduction to Probability</a></span>
+        <span class="tag free">Free &middot; Phase 1</span>
+        <span class="kit-desc">The single most important book in the maths track, and the free PDF plus Harvard's Stat 110 lectures are the whole course. Conditional expectation and the tower property are taught better here than anywhere else. Do the problem sets; watching the lectures is not the same thing.</span>
+      </div>
+
+      <div class="kit-item">
+        <span class="kit-name"><a href="https://www.learncpp.com/" target="_blank" rel="noopener noreferrer">learncpp.com</a></span>
+        <span class="tag free">Free &middot; Phase 1</span>
+        <span class="kit-desc">Free, structured, current, and the best zero-to-competent C++ path that exists. Front to back, no skipping. Your Java instincts about object lifetime and memory will actively mislead you here, which is exactly why it takes 200 hours.</span>
+      </div>
+
+      <div class="kit-item">
+        <span class="kit-name">Stroustrup &mdash; A Tour of C++ (3rd ed.)</span>
+        <span class="tag paid">Paid &middot; Phase 1</span>
+        <span class="kit-desc">Short and dense. Read it immediately after learncpp, when you have enough context for compression to be a feature rather than a wall.</span>
+      </div>
+
+      <div class="kit-item">
+        <span class="kit-name">Meyers &mdash; Effective Modern C++</span>
+        <span class="tag paid">Paid &middot; Phase 2</span>
+        <span class="kit-desc">One item per weekday evening. Move semantics, perfect forwarding and smart pointers are interview territory and you will be asked about all three.</span>
+      </div>
+
+      <div class="kit-item">
+        <span class="kit-name">Williams &mdash; C++ Concurrency in Action (2nd ed.)</span>
+        <span class="tag paid">Paid &middot; Phase 2</span>
+        <span class="kit-desc">The memory model chapter is the important one. You have written threaded Java, which means the concepts transfer and the details will trip you repeatedly &mdash; the JVM gave you guarantees C++ does not.</span>
+      </div>
+
+      <div class="kit-item">
+        <span class="kit-name">Harris &mdash; Trading and Exchanges</span>
+        <span class="tag paid">Paid &middot; Phase 2</span>
+        <span class="kit-desc">The most important book in the entire plan. Non-mathematical, readable, and it is precisely what practitioners mean when they say someone &ldquo;understands markets.&rdquo; If you buy one thing on this page, buy this.</span>
+      </div>
+
+      <div class="kit-item">
+        <span class="kit-name"><a href="https://arxiv.org/abs/1012.0349" target="_blank" rel="noopener noreferrer">Gould et al. &mdash; Limit Order Books</a></span>
+        <span class="tag free">Free &middot; Phase 2</span>
+        <span class="kit-desc">The survey that maps the whole field. Read it once at the start of Phase 2 and again at the end; the second reading is a different paper because you are a different reader.</span>
+      </div>
+
+      <div class="kit-item">
+        <span class="kit-name"><a href="http://www.nasdaqtrader.com/Trader.aspx?id=DPSpecs" target="_blank" rel="noopener noreferrer">NASDAQ ITCH &amp; FIX specifications</a></span>
+        <span class="tag free">Free &middot; Phase 2</span>
+        <span class="kit-desc">Public documents that most candidates have never opened. Read one end to end. Knowing what an add-order message actually contains is worth more in an interview than any course certificate.</span>
+      </div>
+
+      <div class="kit-item">
+        <span class="kit-name"><a href="https://www.idx.co.id/en/regulation/" target="_blank" rel="noopener noreferrer">IDX rulebook and trading regulations</a></span>
+        <span class="tag free">Free &middot; Phase 2</span>
+        <span class="kit-desc">Sessions, tick-size bands, auto-rejection limits, settlement, fees. No imported curriculum covers Jakarta's microstructure and every local interview will. This is the cheapest edge available to you.</span>
+      </div>
+
+      <div class="kit-item">
+        <span class="kit-name"><a href="https://lobsterdata.com/info/DataSamples.php" target="_blank" rel="noopener noreferrer">LOBSTER sample data</a></span>
+        <span class="tag free">Free &middot; Phase 3</span>
+        <span class="kit-desc">Free reconstructed NASDAQ order book days. This is your ground truth: if your engine replays a LOBSTER day and matches, it is correct in a way you can prove rather than assert.</span>
+      </div>
+
+      <div class="kit-item">
+        <span class="kit-name">Crypto exchange WebSocket L2 feeds</span>
+        <span class="tag free">Free &middot; Phase 4</span>
+        <span class="kit-desc">Binance, OKX or Coinbase. The only free, full-depth, real-time order book data an individual can get. Career target says equities; the bytes can come from anywhere.</span>
+      </div>
+
+      <div class="kit-item">
+        <span class="kit-name"><a href="https://www.smallake.kr/wp-content/uploads/2016/03/optliq.pdf" target="_blank" rel="noopener noreferrer">Almgren &amp; Chriss &mdash; Optimal Execution</a></span>
+        <span class="tag free">Free &middot; Phase 5</span>
+        <span class="kit-desc">The execution paper. Read it properly, implement the schedule, then explain in your own words why it beats a naive TWAP. That explanation is an interview answer.</span>
+      </div>
+
+      <div class="kit-item">
+        <span class="kit-name">Crack &mdash; Heard on the Street &middot; Zhou &mdash; green book</span>
+        <span class="tag paid">Paid &middot; Phase 6</span>
+        <span class="kit-desc">Interview brainteasers and probability puzzles. Worthless to start early and essential in the last four months. Joshi's <em>Quant Job Interview Questions</em> is the more C++-flavoured third option and suits this target best.</span>
+      </div>
+
+      <div class="kit-item">
+        <span class="kit-name">Total spend</span>
+        <span class="tag paid">Paid &middot; ~6 books</span>
+        <span class="kit-desc">Harris and learncpp cover the first six months between them, and only Harris costs money. Buy Meyers and Williams around week 15, Hull around week 80, the interview books around week 88. Everything else on this page is free.</span>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="tracker">
+    <div class="sec-head">
+      <h2>Week-by-week tracker</h2>
+      <span class="sec-tag">06 &middot; Progress</span>
+    </div>
+    <p>Tick a week when the work is done, not when the week has passed. If you finish week 9's material in week 12, you are on week 9 &mdash; the number tracks progress, not the calendar.</p>
+
+    <div class="progress-head">
+      <span class="progress-stat"><b id="pct">0%</b> &nbsp;<span id="count">0 / 104 weeks</span></span>
+      <div class="bar"><div class="bar-fill" id="fill"></div></div>
+      <div class="btn-row">
+        <button class="btn" id="export">Export .md</button>
+        <button class="btn" id="reset">Reset</button>
+      </div>
+    </div>
+
+    <div class="track-group" id="weeks"></div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Rules that make it survive</h2>
+      <span class="sec-tag">07 &middot; Discipline</span>
+    </div>
+    <p>Two years is long enough that discipline will fail somewhere. These decide what happens when it does &mdash; written now, while you are still enthusiastic and therefore still honest.</p>
+
+    <div class="rules">
+      <div class="rule-item"><h3>The minimum viable day is ten minutes</h3><p class="t-note">On a bad day, clear the review queue and stop. This is not failure, it is the designed floor. A ten-minute day keeps the habit alive; a zero day costs three days of restarting.</p></div>
+      <div class="rule-item"><h3>The Sunday commit is the only non-negotiable</h3><p class="t-note">Everything else in this plan can slip. The log entry cannot. Commit it publicly even when it reads &ldquo;did nothing this week,&rdquo; because the honest entry is data and the missing entry is a plan quietly dying.</p></div>
+      <div class="rule-item"><h3>Three missed entries means the plan is wrong</h3><p class="t-note">Not that you are lazy. Rewrite the plan to fit the life you actually have rather than trying harder against a schedule that has already been disproved.</p></div>
+      <div class="rule-item"><h3>Bad week protocol: keep C++, drop the mathematics</h3><p class="t-note">When a week collapses, keep the weekday drilling and abandon the weekend block. Skills degrade; knowledge waits. Resume the maths next week and lose nothing but time.</p></div>
+      <div class="rule-item"><h3>Never optimise before publishing the baseline</h3><p class="t-note">Measure first, write the numbers down publicly, then optimise. Not just good engineering &mdash; it converts the project from &ldquo;I built an order book&rdquo; into &ldquo;I made it 40&times; faster and here is the evidence,&rdquo; which is a different sentence entirely.</p></div>
+      <div class="rule-item"><h3>Take the stepping stone, whatever it pays</h3><p class="t-note">If a fintech, bank, broker or exchange role appears at any point after week 36, take it and rebuild this plan around less time and vastly better information. Being inside the industry beats being outside it with better notes.</p></div>
+      <div class="rule-item"><h3>Question four is the important one</h3><p class="t-note">At every monthly checkpoint, ask what should be <em>dropped</em>. A plan with no mechanism for cutting scope is one that gets abandoned wholesale instead of trimmed.</p></div>
+      <div class="rule-item"><h3>Deliberately excluded, and it stays that way</h3><p class="t-note">Stochastic calculus beyond literacy. Machine learning and alpha research. Certifications. A master's degree, for now. Breadth of any kind. At five hours a week of genuine capacity, going wide means arriving at week 104 with nothing anybody will pay for.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Before week one</h2>
+      <span class="sec-tag">08 &middot; Setup</span>
+    </div>
+    <div class="stack">
+      <ul>
+        <li>Sit the <a href="diagnostic.html"><strong>Week 0 diagnostic</strong></a> closed-book and timed. Then a second pass with notes. Record both scores. The gap between them sets the length of the maths block, and inflating either number by twenty percent costs three months of planning error.</li>
+        <li>Pick your <strong>fixed evening hour</strong> and put it in the calendar as a recurring event. The consistency of the slot matters more than which hour it is.</li>
+        <li>Install the <strong>toolchain</strong> in week 1, not week 3: clang or gcc, CMake, GoogleTest, ASan and UBSan wired into the build from the first commit rather than retrofitted later.</li>
+        <li>Create the <strong>public repository</strong> now and make the first log entry before there is anything to report. Starting the habit on an empty week is much easier than starting it on a good one.</li>
+        <li>Order <strong>Harris</strong>. It is the only book you need in the first six months and shipping to Jakarta is slow.</li>
+        <li>Name the thing you are <strong>giving up</strong>, out loud. Ten hours a week has to come from somewhere. If nothing is being cut, the hours are not real and this page is fiction.</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>Built for a floor of 10 hours a week from a physics degree gone cold and five years of JVM engineering. Both assumptions are worth checking against four weeks of real logged data before committing to the 104-week length.</p>
+    <p>The C++ pivot is the expensive branch and the one place the recommendation was overridden. Week 34 exists so that decision gets revisited once, loudly, with a defined alternative &mdash; rather than quietly, by attrition.</p>
+    <p><a href="https://github.com/axeln2399/qd">Repository</a> &middot; <a href="diagnostic.html">Week 0 diagnostic</a></p>
+  </footer>
+
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function () {
+  "use strict";
+
+  var PHASES = [
+    { key: "p0", cell: "√", name: "Phase 0 · Calibration", res: [
+      ["Week 0 diagnostic", "diagnostic.html"],
+      ["learncpp.com", "https://www.learncpp.com/"],
+      ["Compiler Explorer", "https://godbolt.org/"],
+      ["GoogleTest", "https://google.github.io/googletest/"]
+    ], weeks: [
+      [1, "Sit the diagnostic", "90 minutes, closed book, timed. Score it honestly, then a second pass with notes. Set the maths block length from the gap."],
+      [2, "Toolchain and first commit", "CMake, GoogleTest, ASan and UBSan wired in. Harris ch.1–3. First log entry committed.", "gate", "Gate 0 — two scores logged; a tested, sanitiser-clean build."]
+    ]},
+
+    { key: "p1", cell: "Σ", name: "Phase 1 · Foundations", res: [
+      ["Blitzstein & Hwang PDF", "https://projects.iq.harvard.edu/stat110/home"],
+      ["Stat 110 lectures", "https://www.youtube.com/playlist?list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo"],
+      ["3Blue1Brown — linear algebra", "https://www.3blue1brown.com/topics/linear-algebra"],
+      ["exercism C++ track", "https://exercism.org/tracks/cpp"]
+    ], weeks: [
+      [3,  "Counting, conditioning, Bayes", "Weekday: learncpp — types, operators, control flow. Set up a scratch project you rebuild daily."],
+      [4,  "Random variables, expectation, variance", "Weekday: functions, scope, header files, the compilation model. Understand what the linker does."],
+      [5,  "Bernoulli, binomial, Poisson, geometric", "Weekday: arrays, references, pointers. This is where Java intuition starts to mislead."],
+      [6,  "Continuous RVs: uniform, exponential, normal", "Weekday: dynamic memory, RAII, smart pointers. Never write a raw new after this week."],
+      [7,  "Joint distributions, covariance, correlation", "Weekday: classes, constructors, destructors, the rule of five."],
+      [8,  "Conditional expectation and the tower property", "The single most useful tool in the maths track. Weekday: copy vs move, value semantics."],
+      [9,  "LLN, CLT, and where they quietly fail", "Fat tails matter here. Weekday: STL containers — vector, map, unordered_map and their costs."],
+      [10, "Random walks and martingales", "Weekday: templates, algorithms, iterators, std::function and what it costs."],
+      [11, "Estimators, bias and variance", "Wasserman ch.6–9. Weekday: error handling — exceptions versus error codes, and when each belongs."],
+      [12, "Hypothesis testing and p-value abuse", "How backtests lie. Weekday: CMake targets, GoogleTest wired properly, CI on push."],
+      [13, "Linear algebra refresh: eigen, PSD, covariance", "One weekend, no more. Weekday: build the small project — a CSV parser or an LRU cache."],
+      [14, "Retake the diagnostic; finish the small project", "English recording track starts this week: 15 minutes, unscripted, listened back.", "gate", "Gate 1 — ≥85% closed-book; one tested, sanitiser-clean C++ program shipped."]
+    ]},
+
+    { key: "p2", cell: "λ", name: "Phase 2 · Depth & mechanics", res: [
+      ["Gould et al. — LOB survey", "https://arxiv.org/abs/1012.0349"],
+      ["NASDAQ data specs", "http://www.nasdaqtrader.com/Trader.aspx?id=DPSpecs"],
+      ["IDX regulations", "https://www.idx.co.id/en/regulation/"],
+      ["CppCon — Back to Basics", "https://www.youtube.com/results?search_query=cppcon+back+to+basics"],
+      ["Carl Cook — A Microsecond Is an Eternity", "https://www.youtube.com/watch?v=NH1Tta7purM"]
+    ], weeks: [
+      [15, "Harris: the players and what each one wants", "Weekday: Meyers items 1–8 — type deduction, auto, and when it hurts."],
+      [16, "Order types and price-time priority", "Weekday: move semantics and value categories. Read the same code in Compiler Explorer."],
+      [17, "Auctions: opening, closing, halts", "Weekday: perfect forwarding, universal references, reference collapsing."],
+      [18, "Market makers, inventory and adverse selection", "Why a quote is a risk position. Weekday: smart pointers in depth, ownership as design."],
+      [19, "The spread and what it compensates for", "Weekday: lambdas, captures, and the cost of type erasure."],
+      [20, "Liquidity, depth, resilience, impact", "Weekday: STL internals — vector growth, allocation, reserve, small-buffer optimisation."],
+      [21, "Read the NASDAQ ITCH spec end to end", "Every message type. Weekday: threads, joining, data races, what the sanitiser catches."],
+      [22, "Read the FIX spec; trace a message lifecycle", "Weekday: the C++ memory model and atomics. The hardest weekday reading in the plan."],
+      [23, "IDX: sessions, tick bands, auto-rejection", "Local edge, cheaply bought. Weekday: mutexes, condition variables, deadlock patterns."],
+      [24, "IDX: settlement, fees, short rules, quirks", "Weekday: lock-free basics — design a single-producer single-consumer ring buffer."],
+      [25, "Gould survey, first pass", "Weekday: build that ring buffer, with tests and a ThreadSanitizer run."],
+      [26, "Write the 2,000-word order-lifecycle explainer", "Click to settlement, publicly, in English.", "gate", "Gate 2 — criterion γ: markets explained without bluffing."],
+      [27, "How spread and impact are actually measured", "Hasbrouck territory. Weekday: Google Benchmark set up on the ring buffer."],
+      [28, "Order flow imbalance and queue position value", "Weekday: profiling with perf or Instruments. Learn to read a flame graph."],
+      [29, "Gould survey, second pass; explore LOBSTER data", "Weekday: sketch the engine — interfaces, ownership, what owns an order."],
+      [30, "Write the matching engine design document", "Interfaces, data structures, invariants, test strategy. Reread it cold in a week.", "gate", "Gate — a written design you still believe in seven days later."]
+    ]},
+
+    { key: "p3", cell: "≡", name: "Phase 3 · Flagship · limit order book", res: [
+      ["LOBSTER samples", "https://lobsterdata.com/info/DataSamples.php"],
+      ["Google Benchmark", "https://github.com/google/benchmark"],
+      ["Agner Fog — optimisation manuals", "https://www.agner.org/optimize/"],
+      ["Sanitizers", "https://github.com/google/sanitizers"]
+    ], weeks: [
+      [31, "v0 — orders, price levels, book skeleton", "std::map of levels, FIFO queues inside. Ugly and right beats clever and wrong."],
+      [32, "v0 — limit orders, insert, amend, cancel", "Every path, including the ones that should be rejected."],
+      [33, "v0 — matching loop and partial fills", "The core. Take it slowly; almost every subtle bug in the project lives here."],
+      [34, "The C++ off-ramp checkpoint; self-trade prevention", "Honest question, asked once: is C++ still mud? Switching to JVM-first here is planned, not failure.", "gate", "Gate — decide, in writing, whether the pivot continues."],
+      [35, "v0 done — replay a small ITCH sample; tag it", "First version anyone else could run. Write the README now, not later."],
+      [36, "v1 — unit tests for every order path", "Applications for stepping-stone roles open this week. Low effort, ongoing, any pay."],
+      [37, "v1 — property tests and invariants", "Book never crossed, quantity conserved, priority respected. Properties catch what examples miss."],
+      [38, "v1 — deterministic replay harness", "Same input, same output, every time. Without this you cannot debug anything later."],
+      [39, "v1 — fuzz random order streams under sanitisers", "Let the machine find what you would not have thought to test."],
+      [40, "v1 — cross-validate against LOBSTER ground truth", "Your book versus a known-correct reconstruction. This is proof rather than assertion."],
+      [41, "v1 — tag and write up", "What it does, what it guarantees, how it is tested. Correctness is the story here."],
+      [42, "v2 — benchmark harness and message-mix generator", "Realistic mixes: mostly adds and cancels, few trades. Benchmarking a fantasy workload teaches nothing."],
+      [43, "v2 — measure p50, p99, p99.9", "Percentiles, never averages. The tail is the product in this field."],
+      [44, "v2 — profile and find the top three hotspots", "Predict them first, then measure. The gap between the two is the lesson."],
+      [45, "v2 — memory profiling and allocation counting", "Find every allocation on the hot path. There will be more than you expect."],
+      [46, "v2 — publish the baseline before touching anything", "Numbers public first. This is what turns the project into a before-and-after story.", "gate", "Gate — baseline published prior to any optimisation."],
+      [47, "v2 — tag and write up the measurement approach", "How you measured matters as much as what you measured. Say what you controlled for."],
+      [48, "v3 — intrusive lists, kill per-order allocation", "First real optimisation. Measure after every single change."],
+      [49, "v3 — arena and pool allocation", "Allocator design is a genuine interview topic. Understand why it wins here."],
+      [50, "v3 — cache-friendly price level layout", "Data layout beats clever algorithms at this scale. Prove it with numbers."],
+      [51, "v3 — hot path cleanup, branch behaviour", "Diminishing returns start here. Notice when to stop; that judgement is also a skill."],
+      [52, "One year in — full day replay and write-up", "Every test green, percentiles before and after, the whole story documented.", "gate", "Gate 3 — the engine replays a real day and the improvement is proven."]
+    ]},
+
+    { key: "p4", cell: "≈", name: "Phase 4 · Live data", res: [
+      ["Binance WebSocket streams", "https://developers.binance.com/docs/binance-spot-api-docs/web-socket-streams"],
+      ["OKX WebSocket API", "https://www.okx.com/docs-v5/en/"],
+      ["Databento blog", "https://databento.com/blog"]
+    ], weeks: [
+      [53, "WebSocket client in C++; connect and parse", "Use a library for TLS. Writing your own is a different project and not this one."],
+      [54, "Incremental L2 updates into a live book", "Snapshot plus deltas. The first time your book matches the exchange's is a genuinely good day."],
+      [55, "Sequence gaps and resnapshot logic", "The first real production problem. Detect, recover, log, continue."],
+      [56, "Reconnection, backoff and state recovery", "The network will fail at 3am. Decide now what happens when it does."],
+      [57, "Timestamping and latency measurement", "Clock sources, monotonic versus wall, what you can and cannot measure from outside."],
+      [58, "Backpressure and slow consumers", "What happens when downstream cannot keep up. Every answer is a trade-off; pick one deliberately."],
+      [59, "Continuous cross-validation against snapshots", "An automated check that runs forever and shouts when reconstruction drifts."],
+      [60, "Binary log format; replayable capture", "Record everything. Reproducibility is the whole reason this is worth building."],
+      [61, "Feed the reconstructed stream into the engine", "Two projects become one system. This is the moment it starts looking like real infrastructure."],
+      [62, "Sustained throughput test — 100k messages/sec", "Find the breaking point, then explain in writing why it breaks where it does."],
+      [63, "Metrics, structured logs, observability", "If you cannot see inside it, you cannot claim it works. Interviewers ask about this."],
+      [64, "Run it unattended for a full week", "The real test. Uptime, drift, memory growth, recovery from every failure it hits.", "gate", "Gate — seven days unattended, with the incident log to show for it."],
+      [65, "Write the README a stranger reads in five minutes", "What, why, how to run it, what it guarantees, what it does not. Harder than the code."],
+      [66, "Public write-up of the whole system", "Architecture, decisions, trade-offs, measurements. This is the artefact recruiters read."],
+      [67, "Rebuild the CV around projects, not years", "Lead with what you built and measured. Five years of JVM is supporting context now."],
+      [68, "Applications at volume, with a link attached", "Prop shops, exchanges, banks, brokers, asset managers, Singapore, remote.", "gate", "Gate 4 — criterion β: a shipped project a practitioner would respect."]
+    ]},
+
+    { key: "p5", cell: "∂", name: "Phase 5 · Simulator & execution", res: [
+      ["Almgren & Chriss — Optimal Execution", "https://www.smallake.kr/wp-content/uploads/2016/03/optliq.pdf"],
+      ["Kyle — Continuous Auctions and Insider Trading", "https://www.jstor.org/stable/1913210"],
+      ["Bouchaud et al. — Trades, Quotes and Prices", "https://arxiv.org/abs/1802.01898"]
+    ], weeks: [
+      [69, "Simulator design — what ‘realistic’ means here", "Write down what you will model and what you will not, and why. Scope discipline is the skill."],
+      [70, "Latency model: network, matching, response", "Every real system has three of these and most simulators pretend they have none."],
+      [71, "Queue position tracking", "The thing that separates a toy simulator from a useful one. Get this right."],
+      [72, "Fee and rebate tiers, maker versus taker", "Economics change behaviour. An algorithm ignoring fees is optimising the wrong objective."],
+      [73, "Rejects, cancels, amends and their races", "The unhappy paths are where real execution systems actually live."],
+      [74, "Validate the simulator against replayed reality", "Feed it a recorded day and check the fills are plausible. A wrong simulator is worse than none."],
+      [75, "Implement TWAP", "The simplest algorithm, and the baseline everything else must beat."],
+      [76, "Implement VWAP with a volume curve", "Estimating the curve is the actual problem. Intraday volume is not uniform and never was."],
+      [77, "Implement POV (participation)", "Adaptive rather than scheduled. Note where it behaves badly and write that down."],
+      [78, "Measure slippage against arrival price", "Define your benchmark precisely before measuring. Most benchmark arguments are definition arguments."],
+      [79, "Measure market impact", "Temporary versus permanent. Read Kyle's lambda and connect it to what you observe."],
+      [80, "Fill rates and queue position decay", "Where passive strategies quietly lose money. Buy Hull this week; it is needed from week 84."],
+      [81, "Almgren–Chriss — read the paper properly", "Not the summary. The whole paper, with the derivations, over one weekend."],
+      [82, "Implement the Almgren–Chriss schedule", "Risk aversion as a parameter. Watch the schedule change shape as you vary it."],
+      [83, "Compare all four; explain the difference", "In your own words, without the paper open. That explanation is an interview answer."],
+      [84, "Hull ch.1–7 — forwards, futures, options", "Literacy only. Enough to hold a conversation, deliberately not enough to price exotics."],
+      [85, "Hull ch.8–15 — greeks, hedging, volatility", "Know what delta and vega mean and why a desk cares. Stop there."],
+      [86, "Backtest pitfalls: look-ahead, survivorship, multiple testing", "López de Prado on overfitting. Learn to be the sceptic in the room."],
+      [87, "Write the capstone report", "Method, results, limitations. Include what did not work; it reads as honesty, because it is."],
+      [88, "Publish the capstone", "‘I built an exchange simulator with realistic queue dynamics and measured four algorithms against it.’", "gate", "Gate 5 — capstone published and linked from the CV."]
+    ]},
+
+    { key: "p6", cell: "α", name: "Phase 6 · Conversion", res: [
+      ["OpenQuant job board", "https://openquant.co/"],
+      ["QuantNet forums", "https://quantnet.com/"],
+      ["LeetCode", "https://leetcode.com/"],
+      ["Kleppmann — DDIA", "https://dataintensive.net/"]
+    ], weeks: [
+      [89, "C++ interview drilling: lifetime, UB, virtual dispatch", "The questions that separate people who use C++ from people who understand it."],
+      [90, "C++: memory model, atomics, ordering questions", "Hard, and asked constantly at firms that care about latency."],
+      [91, "Concurrency problems under time pressure", "Producer-consumer, bounded buffers, lock-free queues. Whiteboard-speed."],
+      [92, "LeetCode medium in C++, timed — five a week", "Fluency under pressure, not grinding. Set a timer and respect it."],
+      [93, "More LeetCode; STL fluency", "Know your containers cold. Reaching for the wrong one is a visible tell."],
+      [94, "Probability puzzles — Heard on the Street", "Your Phase 1 work pays off here. Speak the reasoning aloud as you solve."],
+      [95, "The green book: brainteasers and stochastic questions", "Pattern recognition. Most questions are ten questions wearing different clothes."],
+      [96, "Systems design: a matching engine at scale", "You have actually built one. Very few candidates saying this sentence are telling the truth."],
+      [97, "Systems design: market data distribution", "Multicast, fan-out, sequencing, recovery. Draw it, then defend the trade-offs."],
+      [98, "Mock interview 1 — recorded, in English", "Painful and necessary. Watch it back the same day, however much you would rather not."],
+      [99, "Mock interview 2 — review and fix the tells", "Filler words, hedging, explaining too much. Fix one thing at a time."],
+      [100, "Behavioural: STAR stories from the projects", "Six stories, rehearsed. Conflict, failure, a hard decision, a thing you got wrong."],
+      [101, "Applications at volume", "Prop shops, exchanges, banks, brokers, asset managers. Volume matters; personalisation matters more."],
+      [102, "Referrals and outreach", "Cold outreach with a project link works far better than an application form. Ask people who already said yes."],
+      [103, "Mock interview 3 — full loop simulation", "Technical, design, behavioural, back to back. Rehearse the fatigue, not just the questions."],
+      [104, "Screens passed — or the plan rewritten from evidence", "Either way you now know exactly which gap is real, which you could not have known at week 1.", "gate", "Gate 6 — criterion α: passing technical screens."]
+    ]}
+  ];
+
+  var KEY = "qd-progress-v1";
+  var storageOK = true;
+  var state = {};
+
+  try {
+    var raw = window.localStorage.getItem(KEY);
+    if (raw) { state = JSON.parse(raw) || {}; }
+  } catch (e) { storageOK = false; }
+
+  function save() {
+    if (!storageOK) { return; }
+    try { window.localStorage.setItem(KEY, JSON.stringify(state)); }
+    catch (e) { storageOK = false; }
+  }
+
+  var host = document.getElementById("weeks");
+  var total = 0;
+
+  PHASES.forEach(function (phase) {
+    var label = document.createElement("div");
+    label.className = "track-label";
+    var h = document.createElement("h3");
+    h.textContent = phase.cell + "  " + phase.name;
+    var span = document.createElement("span");
+    span.textContent = "weeks " + phase.weeks[0][0] + "–" + phase.weeks[phase.weeks.length - 1][0];
+    label.appendChild(h);
+    label.appendChild(span);
+    host.appendChild(label);
+
+    if (phase.res && phase.res.length) {
+      var resRow = document.createElement("div");
+      resRow.className = "res-row";
+      phase.res.forEach(function (r) {
+        var a = document.createElement("a");
+        a.className = "res-link";
+        a.href = r[1];
+        if (r[1].indexOf("http") === 0) { a.target = "_blank"; a.rel = "noopener noreferrer"; }
+        a.textContent = r[0];
+        resRow.appendChild(a);
+      });
+      host.appendChild(resRow);
+    }
+
+    phase.weeks.forEach(function (w) {
+      total += 1;
+      var id = "w" + w[0];
+      var isGate = w[3] === "gate";
+      var row = document.createElement("div");
+      row.className = "wk" + (isGate ? " is-gate" : "");
+      row.id = "row-" + id;
+
+      var box = document.createElement("input");
+      box.type = "checkbox";
+      box.id = id;
+      box.checked = !!state[id];
+
+      var num = document.createElement("div");
+      num.className = "wk-n";
+      num.textContent = "WK " + (w[0] < 10 ? "0" : "") + w[0];
+
+      var lab = document.createElement("label");
+      lab.setAttribute("for", id);
+      var task = document.createElement("span");
+      task.className = "wk-task";
+      task.textContent = w[1];
+      lab.appendChild(task);
+      var sub = document.createElement("span");
+      sub.className = "wk-sub";
+      sub.textContent = w[2];
+      lab.appendChild(sub);
+
+      if (isGate) {
+        var gateLine = document.createElement("span");
+        gateLine.className = "wk-sub wk-gate";
+        gateLine.textContent = w[4];
+        lab.appendChild(gateLine);
+      }
+
+      row.appendChild(box);
+      row.appendChild(num);
+      row.appendChild(lab);
+      host.appendChild(row);
+
+      if (box.checked) { row.classList.add("is-done"); }
+
+      box.addEventListener("change", function () {
+        state[id] = box.checked;
+        row.classList.toggle("is-done", box.checked);
+        save();
+        render();
+      });
+    });
+  });
+
+  var pctEl = document.getElementById("pct");
+  var countEl = document.getElementById("count");
+  var fillEl = document.getElementById("fill");
+
+  function done() {
+    var n = 0;
+    for (var k in state) { if (state[k]) { n += 1; } }
+    return n;
+  }
+
+  function render() {
+    var n = done();
+    var pct = Math.round((n / total) * 100);
+    pctEl.textContent = pct + "%";
+    countEl.textContent = n + " / " + total + " weeks · " + (n * 10) + " hrs logged";
+    fillEl.style.width = pct + "%";
+  }
+
+  render();
+
+  var toastEl = document.getElementById("toast");
+  var toastTimer = null;
+
+  function toast(msg) {
+    toastEl.textContent = msg;
+    toastEl.classList.add("show");
+    if (toastTimer) { window.clearTimeout(toastTimer); }
+    toastTimer = window.setTimeout(function () { toastEl.classList.remove("show"); }, 2400);
+  }
+
+  if (!storageOK) { toast("Progress will not save on this device"); }
+
+  function buildMarkdown() {
+    var n = done();
+    var lines = ["# Quant Developer — 104-Week Progress", "", n + " / " + total + " weeks complete (" + Math.round((n / total) * 100) + "%)", ""];
+    PHASES.forEach(function (phase) {
+      lines.push("## " + phase.cell + " " + phase.name);
+      lines.push("");
+      phase.weeks.forEach(function (w) {
+        var mark = state["w" + w[0]] ? "x" : " ";
+        lines.push("- [" + mark + "] **Week " + w[0] + "** — " + w[1]);
+        lines.push("  - " + w[2]);
+        if (w[3] === "gate") { lines.push("  - **" + w[4] + "**"); }
+      });
+      lines.push("");
+      if (phase.res && phase.res.length) {
+        lines.push("Materials: " + phase.res.map(function (r) {
+          return "[" + r[0] + "](" + r[1] + ")";
+        }).join(" · "));
+        lines.push("");
+      }
+    });
+    return lines.join("\n");
+  }
+
+  document.getElementById("export").addEventListener("click", function () {
+    var md = buildMarkdown();
+    var name = "qd-progress.md";
+    try {
+      var blob = new Blob([md], { type: "text/markdown" });
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement("a");
+      a.href = url;
+      a.download = name;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      window.setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+      toast("Saved " + name);
+    } catch (e) {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(md).then(
+          function () { toast("Copied as Markdown"); },
+          function () { toast("Could not export here"); }
+        );
+      } else {
+        toast("Could not export here");
+      }
+    }
+  });
+
+  document.getElementById("reset").addEventListener("click", function () {
+    if (!window.confirm("Clear all ticked weeks? This cannot be undone.")) { return; }
+    state = {};
+    save();
+    var boxes = host.querySelectorAll("input[type=checkbox]");
+    for (var i = 0; i < boxes.length; i += 1) {
+      boxes[i].checked = false;
+      boxes[i].parentNode.classList.remove("is-done");
+    }
+    render();
+    toast("Progress cleared");
+  });
+})();
+</script>
+
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function () {
+    navigator.serviceWorker.register("sw.js").catch(function () {});
+  });
+}
+</script>
+</body>
+</html>
